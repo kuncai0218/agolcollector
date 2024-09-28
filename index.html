@@ -35,7 +35,8 @@
         const view = new MapView({
           container: "viewDiv", // Reference to the DOM node that will contain the view
           map: map, // References the map object
-          zoom: 3 // You can set an initial zoom level
+          center: [-100.33, 43.69], // Longitude, Latitude (e.g., Center on the USA)
+          zoom: 4, // Zoom level (smaller = further out, larger = more zoomed in)
         });
     });
   </script>
