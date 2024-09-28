@@ -48,7 +48,11 @@
         });
               // Add the Search widget to the MapView
       const searchWidget = new Search({
-        view: view // Associates the Search widget with the view
+        view: view, // Associates the Search widget with the view
+        sources: [], // You can provide custom sources if needed
+  includeDefaultSources: true, // Use default sources like ArcGIS Online geocoders
+  locationEnabled: true, // Enable or disable location search
+  placeholder: "Search for places" // Placeholder text in the search bar
       });
 
       // Add the Search widget to the top right corner of the view
