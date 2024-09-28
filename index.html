@@ -20,7 +20,7 @@
 <script src="https://js.arcgis.com/4.26/"></script>
 <!--loading the modules-->
 <script>
-    require([ "esri/Map", "esri/views/MapView","esri/Config" ], (Map, MapView,esriConfig) => {
+    require([ "esri/Map", "esri/views/MapView","esri/config" ], (Map, MapView,esriConfig) => {
         esriConfig.apiKey = "AAPTxy8BH1VEsoebNVZXo8HurMhigZxkNnLwuvYOAd-vHERLmMDpuFzXIlbuGyhHN6-u3P5FPEWJfIn_RaFvtZofaobtfCPCJXCn5sncz2wrbi-nAoZgZPlnrxYys3OBOU0kxTQdzQXZAHzK3o0_CxtaIfyWKaLyLS2R9Z96iE7GBo_ay95Nb30BXpNYoo405oxLyXnBsow2M6R3DInO_PSX1OXenYZI1_XbW7nUF8sYfMU.AT1_rHjxjuXQ";
         const map = new Map({
  basemap: "satellite"
