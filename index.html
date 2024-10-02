@@ -66,10 +66,13 @@
 });
 map.add(layer);
 layer.load().then(() => {
-        console.log("图层加载成功！");
-      }).catch((error) => {
-        console.error("图层加载失败：", error);
-      });
+  console.log("图层加载成功！");
+}).catch((error) => {
+  console.error("图层加载失败：", error);
+  console.error("错误名称：", error.name);
+  console.error("错误消息：", error.message);
+  console.error("错误详情：", error.details);
+});
 
         // Add the locate widget to the top left corner of the view
         view.ui.add(locateBtn, {
