@@ -76,7 +76,8 @@ layer.load().then(() => {
 
         // Add the locate widget to the top left corner of the view
         view.ui.add(locateBtn, {
-          position: "top-left"
+          position: "top-left",
+          index:0
         });
               // Add the Search widget to the MapView
       const searchWidget = new Search({
@@ -89,7 +90,8 @@ layer.load().then(() => {
 
       // Add the Search widget to the top right corner of the view
       view.ui.add(searchWidget, {
-        position: "top-right"
+        position: "top-left",
+        index:1
       });
     });
   </script>
