@@ -12,6 +12,24 @@
         padding: 0;
         overflow: hidden;
       }
+      .addRecordBtn {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+  background-color: #0079c1;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addRecordBtn:hover {
+  background-color: #005a87;
+}
       #viewDiv {
         height: 100vh; /* 100% of the viewport height */
         width: 100vw;  /* 100% of the viewport width */
@@ -67,8 +85,10 @@ map.add(layer);
       });
     });
   </script>
+  
 
   <body>
+    <a href="https://arcg.is/m80uX"target="_blank" class="addRecordBtn">Add Record</a>
     <div id="viewDiv"></div>
   </body>
 </html>
